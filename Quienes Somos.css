@@ -1,0 +1,162 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right, #fff8f0, #ffe5d9);
+}
+
+/* HEADER */
+.header{
+    background: linear-gradient(135deg, #b23a48, #ff7b54);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* NAV */
+nav{
+    background:#ff7b54;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    padding:15px;
+    gap:25px;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.activo{
+    border-bottom:2px solid white;
+}
+
+/* SUBMENU */
+/* SUBMENU MEJORADO */
+.submenu{
+    position:absolute;
+    top:50px;
+    left:50%;
+    transform:translateX(-50%) translateY(10px);
+
+    background:white;
+    list-style:none;
+    padding:10px 0;
+    border-radius:12px;
+
+    min-width:160px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    opacity:0;
+    visibility:hidden;
+    transition: all 0.3s ease;
+}
+
+/* ITEMS */
+.submenu li{
+    text-align:center;
+}
+
+/* LINKS */
+.submenu a{
+    display:block;
+    padding:10px;
+    color:#333;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+/* HOVER ITEM */
+.submenu a:hover{
+    background:#ff7b54;
+    color:white;
+}
+
+/* MOSTRAR SUBMENU CON ANIMACIÓN */
+.dropdown:hover .submenu{
+    opacity:1;
+    visibility:visible;
+    transform:translateX(-50%) translateY(0);
+}
+
+.dropdown:hover .submenu{
+    display:block;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+}
+
+/* TARJETA */
+.card{
+    background:white;
+    max-width:600px;
+    text-align:center;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN */
+.card img{
+    width:100%;
+    max-width:350px;
+    margin:20px auto;
+    display:block;
+    border-radius:15px;
+}
+
+/* TEXTO */
+.card p{
+    margin:10px 0;
+    line-height:1.6;
+}
+
+/* TITULO */
+.card h2{
+    color:#b23a48;
+}
+
+/* VALORES */
+.valores{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+}
+
+.valores div{
+    text-align:center;
+}
+
+.valores i{
+    font-size:25px;
+    color:#ff7b54;
+}
+
+/* FOOTER */
+footer{
+    background:#b23a48;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}

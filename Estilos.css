@@ -1,0 +1,181 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:'Poppins', sans-serif;
+    background: linear-gradient(to right, #fff8f0, #ffe5d9);
+}
+
+/* HEADER */
+.header{
+    background: linear-gradient(135deg, #b23a48, #ff7b54);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* NAV */
+nav{
+    background:#ff7b54;
+}
+
+/* 🔥 MENÚ CENTRADO */
+.menu{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    padding:15px;
+    gap:30px;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* 🔥 SUBMENÚ CENTRADO */
+/* CONTENEDOR */
+.dropdown{
+    position:relative;
+}
+
+/* SUBMENÚ */
+.submenu{
+    position:absolute;
+    top:50px;
+    left:50%;
+    transform:translateX(-50%) translateY(10px);
+
+    background:white;
+    list-style:none;
+    padding:10px 0;
+    border-radius:12px;
+
+    min-width:170px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+    opacity:0;
+    visibility:hidden;
+    transition:all 0.3s ease;
+    z-index:1000;
+}
+
+/* ITEMS */
+.submenu li{
+    text-align:center;
+}
+
+/* LINKS */
+.submenu a{
+    display:block;
+    padding:12px;
+    color:#333;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+/* HOVER */
+.submenu a:hover{
+    background:#ff7b54;
+    color:white;
+}
+
+/* ACTIVAR SUBMENU */
+.dropdown:hover .submenu{
+    opacity:1;
+    visibility:visible;
+    transform:translateX(-50%) translateY(0);
+}
+
+/* FLECHA ANIMADA */
+.dropdown a i{
+    margin-left:5px;
+    transition:0.3s;
+}
+
+.dropdown:hover a i{
+    transform:rotate(180deg);
+}
+
+
+
+/* BANNER */
+.banner{
+    display:flex;
+    justify-content:center;
+    margin:20px;
+}
+
+.banner img{
+    width:80%;
+    max-width:900px;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:40px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#b23a48;
+    color:white;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    background:#b23a48;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* 🔥 CONTENEDOR FOOTER */
+.footer-contenido{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* REDES */
+.redes a{
+    color:white;
+    margin:0 10px;
+    font-size:22px;
+}
+
+/* 🔥 QR */
+.qr{
+    text-align:center;
+}
+
+.qr img{
+    margin-top:10px;
+    border-radius:10px;
+    background:white;
+    padding:5px;
+}

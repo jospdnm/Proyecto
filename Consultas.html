@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas | BIEN-TAIPA</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Consultas.css">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+    <ul class="menu">
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="Recetas.html">Recetas</a></li>
+        <li><a href="Asistente Virtual.html">Asistente Virtual</a></li>
+
+        <li class="dropdown">
+            <a href="#">¿Quiénes Somos?</a>
+            <ul class="submenu">
+                <li><a href="Misión.html">Misión</a></li>
+                <li><a href="Vision.html">Visión</a></li>
+               
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>📩 Consultas</h1>
+    <p>¿Tienes dudas sobre recetas? Escríbenos</p>
+</header>
+
+<!-- FORMULARIO -->
+<main class="contenedor">
+
+    <form id="formulario">
+
+        <label>Nombre</label>
+        <input type="text" id="nombre" required>
+
+        <label>Correo</label>
+        <input type="email" id="correo" required>
+
+        <label>Tipo de consulta</label>
+        <select id="tipo">
+            <option>Receta</option>
+            <option>Sugerencia</option>
+            <option>Problema</option>
+        </select>
+
+        <label>Mensaje</label>
+        <textarea id="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar Consulta</button>
+
+    </form>
+
+    <!-- RESPUESTA -->
+    <div id="respuesta"></div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 BIEN-TAIPA 🇵🇪</p>
+    <div class="redes">
+        <a href="https://www.facebook.com/joserenzo.quirogacutipa?locale=es_LA" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/joserenzo.quirogacutipa/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/51983495666" target="_blank" aria-label="Whatsapp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</footer>
+
+<script src="Consultas.js"></script>
+
+</body>
+</html>

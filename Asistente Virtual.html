@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente | BIEN-TAIPA</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Asistente_Virtual.css">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- CONTENEDOR PRINCIPAL -->
+<main>
+
+    <!-- CHAT BOX -->
+    <div class="chat-container">
+
+        <!-- HEADER -->
+        <div class="chat-header">
+            🤖 Asistente de recetas
+                (Lobo domesticado)
+        </div>
+
+        <!-- MENSAJES -->
+        <div class="chat-box" id="chatBox"></div>
+
+        <!-- INPUT -->
+        <div class="chat-input">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Ej: como hacer ceviche"
+                onkeypress="if(event.key==='Enter') enviarMensaje()"
+            >
+            <button onclick="enviarMensaje()">Enviar</button>
+        </div>
+
+    </div>
+
+</main>
+
+<!-- JS -->
+<script src="Asistente-Virtual.js"></script>
+<footer>
+    <p>© 2026 BIEN-TAIPA | Todos los derechos reservados</p>
+
+    <div class="redes">
+        <a href="https://www.facebook.com/joserenzo.quirogacutipa?locale=es_LA" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com/joserenzo.quirogacutipa/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://wa.me/51983495666" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
